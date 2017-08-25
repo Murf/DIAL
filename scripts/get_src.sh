@@ -13,8 +13,8 @@ set -o errexit
 distributor=$(lsb_release -is)
 if [[ $distributor = "Raspbian" ]]; then
 apt-get install raspberrypi-kernel-headers -y
-elif [[ $distributor = "Debian" ]]; then
-apt-get install linux-headers-`uname -r` -y
+#elif [[ $distributor = "Debian" ]]; then
+#apt-get install linux-headers-`uname -r` -y
 fi
 
 ###########################################################
