@@ -22,7 +22,7 @@ fi
 # Get Asterisk
 cd /usr/src
 # svn checkout http://svn.ohnosec.org/svn/projects/allstar/astsrc-1.4.23-pre/trunk astsrc-1.4.23-pre
-git clone https://github.com/AllStarLink/Asterisk.git astsrc-1.4.23-pre
+git clone https://github.com/Murf/Asterisk.git astsrc-1.4.23-pre
 
 # grab the svn version number and put it where asterisk/Makefile expects it.
 cd /usr/src/astsrc-1.4.23-pre
@@ -30,7 +30,7 @@ echo "1538" >asterisk/.version
 
 # download uridiag
 # svn co http://svn.ohnosec.org/svn/projects/allstar/uridiag/trunk uridiag
-git clone https://github.com/AllStarLink/uridiag.git
+git clone https://github.com/Murf/uridiag.git
 
 mkdir -p /usr/src/astsrc-1.4.23-pre/asterisk/contrib/systemd
 cp /srv/systemd/asterisk.service /usr/src/astsrc-1.4.23-pre/asterisk/contrib/systemd
