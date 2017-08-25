@@ -10,7 +10,7 @@ set -o errexit
 ################################################
 
 wget -O - http://dvswitch.org/ASL_Repository/keyFile | sudo apt-key add -
-cp /srv/repository/Murf.list /etc/apt/sources.list.d
+cp /srv/repository/AllStarLink.list /etc/apt/sources.list.d
 apt-get update
 
 
